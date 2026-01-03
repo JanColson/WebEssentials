@@ -1,2 +1,50 @@
-/*  Naam: 
-*/
+body {
+    font-family: serif;
+}
+
+table {
+    width: 750px;
+    border-collapse: separate;
+    border-spacing: 3px;
+    margin: 20px auto;
+    border: none;
+}
+
+table img {
+    width: 70px;
+}
+
+th, td {
+    border: 3px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+tbody th {
+    background-color: rgb(211, 211, 211);
+}
+
+tbody td[rowspan] {
+    background-color: rgb(100, 100, 100);
+    color: rgb(255, 255, 255);
+}
+
+td:contains('win'), td:contains('loose'), td:contains('draw') {
+    font-family: monospace;
+}
+thead th {
+    background-color: rgb(100, 100, 100);
+    color: rgb(255, 255, 255);
+}
+tbody th {
+    background-color: rgb(211, 211, 211);
+    color: rgb(0, 0, 0);
+}
+
+thead tr:nth-child(2) th {
+    background-color: rgb(211, 211, 211);
+    color: rgb(0, 0, 0);
+}
+tbody td:empty {
+    background-color: rgb(211, 211, 211);
+}
