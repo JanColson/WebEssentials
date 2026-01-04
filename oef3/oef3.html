@@ -1,13 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <title>Oef3</title>
-    <link href="css/oef3.css" rel="stylesheet">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta charset="utf-8">
+<meta charset="UTF-8">
+<title>Oef3</title>
+<link rel="stylesheet" href="css/oef3.css">
 </head>
 <body>
-  &star;
+
+<div class="form-header">
+    <h2 class="form-title">Spel-sessie Wingspan</h2>
+    <div class="image-section">
+        <img src="images/1.jpeg" alt="Wingspan game box">
+    </div>
+</div>
+
+<div class="form-section">
+<form action="verwerk.html" method="GET">
+
+    <div class="row">
+        <label for="datum">Datum:</label>
+        <input type="date" id="datum" name="datum" required>
+    </div>
+
+    <div class="row start-tijdsduur">
+        <div class="cell start">
+            <label class="inline-label" for="start">Start:</label>
+            <input type="number" id="start" name="start" min="0" max="23" required>
+        </div>
+        <div class="cell tijdsduur">
+            <label class="inline-label" for="tijdsduur">Tijdsduur:</label>
+            <input type="number" id="tijdsduur" name="tijdsduur" min="1" max="12" required>
+        </div>
+    </div>
+
+    <div class="row">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="row">
+        <label for="complexiteit">Complexiteit:</label>
+        <input type="range" id="complexiteit" name="complexiteit" min="1" max="10">
+    </div>
+
+    <div class="row">
+        <label for="geluk">Geluk:</label>
+        <input type="range" id="geluk" name="geluk" min="1" max="10">
+    </div>
+
+    <div class="row">
+        <label for="strategie">Strategie:</label>
+        <input type="range" id="strategie" name="strategie" min="1" max="10">
+    </div>
+
+    <div class="column">
+        <label for="beschrijving2">Beschrijving extra:</label>
+        <textarea id="beschrijving2" name="beschrijving2"></textarea>
+    </div>
+
+    <div class="row">
+        <label>Aantal sterren:</label>
+        <div class="stars">
+            <input type="radio" id="star1" name="sterren" value="1">
+            <label for="star1">★</label>
+
+            <input type="radio" id="star2" name="sterren" value="2">
+            <label for="star2">★★</label>
+
+            <input type="radio" id="star3" name="sterren" value="3">
+            <label for="star3">★★★</label>
+
+            <input type="radio" id="star4" name="sterren" value="4">
+            <label for="star4">★★★★</label>
+        </div>
+    </div>
+
+    <!-- Submit -->
+    <button type="submit">Bewaar</button>
+
+</form>
+</div>
+
 </body>
 </html>
